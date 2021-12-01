@@ -9,6 +9,10 @@ public class IndexEntryImp implements IndexEntry {
         this.docId = docId;
         this.tfIdf = tfIdf;
     }
+    public IndexEntryImp(IndexEntry indexEntry) {
+        this.docId = indexEntry.getId();
+        this.tfIdf = indexEntry.getScore();
+    }
 
     @Override
     public String getId() {

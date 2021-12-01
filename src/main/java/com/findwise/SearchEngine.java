@@ -1,5 +1,7 @@
 package com.findwise;
 
+import java.util.List;
+
 public interface SearchEngine {
 
     /**
